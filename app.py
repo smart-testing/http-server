@@ -44,7 +44,7 @@ class Action:
 
     @staticmethod
     def tap_element(element: Element):
-        return Action("tap", element.get_center())
+        return Action("TAP", element.get_center())
 
     def to_dict(self):
         return {"type": self._type, "position": self._position.to_dict()}
