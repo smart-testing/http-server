@@ -61,5 +61,11 @@ def generate_action():
     return jsonify(action.to_dict())
 
 
+@app.route('/feedback', methods=["POST"])
+def feedback():
+    # принимает NetState + статус предыдущей операции
+    return ""
+
+
 if __name__ == '__main__':
     app.run()
